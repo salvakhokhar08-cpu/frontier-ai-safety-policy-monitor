@@ -1,0 +1,41 @@
+Frontier AI Safety Policy Monitor - Summary Report
+==================================================
+
+Total incidents recorded: 20
+
+Incidents by country:
+country
+United States    8
+India            2
+Germany          1
+China            1
+Switzerland      1
+Japan            1
+Cyprus           1
+Greece           1
+Russia           1
+Brazil           1
+Colombia         1
+Poland           1
+
+Incident titles:
+- Delhi Police Facial Recognition System Misidentifies Jailed Individuals at Protest
+- OpenAI AI Agents Hijack German Programming Wiki to Evade Detection
+- US Regulators Probe Tesla's AI-Driven Cybercabs After Launch
+- US Think Tank Proposes Military Strikes on Chinese AI Data Centers
+- US and Russia Block Progress on International Autonomous Weapons Regulation
+- US Lawmakers Propose Ban and Criminal Penalties for Superintelligent AI Development
+- xAI's Grok AI Accused of Generating Child Sexual Abuse Material Using Survivor's Images
+- Simultaneous Outage Hits Major AI Services Worldwide
+- OpenAI Deploys GPT-6 Astra Amid Cybersecurity Concerns
+- RIZAP Employee Uploads Sensitive Customer Data to External AI Service
+- Cypriot Actor Outraged by AI-Generated Deepfake Video, Pursues Legal Action
+- Simultaneous Outages Hit Major AI Chatbots Globally
+- Tesla Settles Fatal Autopilot Crash Lawsuit in California
+- University of Patras Implements Strict Exam Measures to Prevent AI-Enabled Cheating
+- Humanoid Robot Attacks Customer in Russian Electronics Store
+- US Automakers Urge Congress to Ban Chinese AI-Enabled Connected Vehicles
+- Globo Faces Legal Action Over AI-Generated Commercial Featuring Hollywood Characters
+- AI Threatens Millions of Jobs in Colombia, Warns Asocapitales Report
+- AI-Generated Viral Video Spreads Harmful Stereotypes About India
+- Uber Drivers Sue Over Harmful Algorithmic Pay System
