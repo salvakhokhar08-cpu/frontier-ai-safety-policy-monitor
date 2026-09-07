@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Frontier AI Safety Policy Monitor - Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: #0f172a;
+        color: #e2e8f0;
+        margin: 0;
+        padding: 30px;
+    }
+    h1 {
+        color: #38bdf8;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    p.subtitle {
+        text-align: center;
+        color: #94a3b8;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .charts {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .chart-box {
+        background-color: #1e293b;
+        border-radius: 12px;
+        padding: 20px;
+        flex: 1;
+        min-width: 400px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .chart-box h2 {
+        color: #38bdf8;
+        font-size: 18px;
+        margin-top: 0;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #1e293b;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #334155;
+    }
+    th {
+        background-color: #0ea5e9;
+        color: #0f172a;
+    }
+    tr:hover {
+        background-color: #334155;
+    }
+    .stats {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+    .stat-card {
+        background-color: #1e293b;
+        border-radius: 12px;
+        padding: 20px 30px;
+        text-align: center;
+        min-width: 150px;
+    }
+    .stat-card .number {
+        font-size: 32px;
+        font-weight: bold;
+        color: #38bdf8;
+    }
+    .stat-card .label {
+        color: #94a3b8;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Frontier AI Safety Policy Monitor</h1>
+    <p class="subtitle">Tracking AI safety incidents, security risks, and policy developments</p>
+
+    <div class="stats">
+        <div class="stat-card">
+            <div class="number">20</div>
+            <div class="label">Total Incidents Tracked</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">12</div>
+            <div class="label">Countries Involved</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">2</div>
+            <div class="label">Days Covered</div>
+        </div>
+    </div>
+
+    <div class="charts">
+        <div class="chart-box">
+            <h2>Incidents by Country</h2>
+            <canvas id="countryChart"></canvas>
+        </div>
+        <div class="chart-box">
+            <h2>Incidents Over Time</h2>
+            <canvas id="timeChart"></canvas>
+        </div>
+    </div>
+
+    <h2 style="color:#38bdf8;">Incident Log</h2>
+    <table>
+        <tr><th>Date</th><th>Title</th><th>Country</th></tr>
+        <tr><td>2026-09-04</td><td>Delhi Police Facial Recognition System Misidentifies Jailed Individuals at Protest</td><td>India</td></tr><tr><td>2026-09-04</td><td>OpenAI AI Agents Hijack German Programming Wiki to Evade Detection</td><td>Germany</td></tr><tr><td>2026-09-04</td><td>US Regulators Probe Tesla's AI-Driven Cybercabs After Launch</td><td>United States</td></tr><tr><td>2026-09-04</td><td>US Think Tank Proposes Military Strikes on Chinese AI Data Centers</td><td>China</td></tr><tr><td>2026-09-04</td><td>US and Russia Block Progress on International Autonomous Weapons Regulation</td><td>Switzerland</td></tr><tr><td>2026-09-03</td><td>US Lawmakers Propose Ban and Criminal Penalties for Superintelligent AI Development</td><td>United States</td></tr><tr><td>2026-09-03</td><td>xAI's Grok AI Accused of Generating Child Sexual Abuse Material Using Survivor's Images</td><td>United States</td></tr><tr><td>2026-09-03</td><td>Simultaneous Outage Hits Major AI Services Worldwide</td><td>United States</td></tr><tr><td>2026-09-03</td><td>OpenAI Deploys GPT-6 Astra Amid Cybersecurity Concerns</td><td>United States</td></tr><tr><td>2026-09-03</td><td>RIZAP Employee Uploads Sensitive Customer Data to External AI Service</td><td>Japan</td></tr><tr><td>2026-09-03</td><td>Cypriot Actor Outraged by AI-Generated Deepfake Video, Pursues Legal Action</td><td>Cyprus</td></tr><tr><td>2026-09-03</td><td>Simultaneous Outages Hit Major AI Chatbots Globally</td><td>United States</td></tr><tr><td>2026-09-03</td><td>Tesla Settles Fatal Autopilot Crash Lawsuit in California</td><td>United States</td></tr><tr><td>2026-09-03</td><td>University of Patras Implements Strict Exam Measures to Prevent AI-Enabled Cheating</td><td>Greece</td></tr><tr><td>2026-09-03</td><td>Humanoid Robot Attacks Customer in Russian Electronics Store</td><td>Russia</td></tr><tr><td>2026-09-03</td><td>US Automakers Urge Congress to Ban Chinese AI-Enabled Connected Vehicles</td><td>United States</td></tr><tr><td>2026-09-03</td><td>Globo Faces Legal Action Over AI-Generated Commercial Featuring Hollywood Characters</td><td>Brazil</td></tr><tr><td>2026-09-03</td><td>AI Threatens Millions of Jobs in Colombia, Warns Asocapitales Report</td><td>Colombia</td></tr><tr><td>2026-09-03</td><td>AI-Generated Viral Video Spreads Harmful Stereotypes About India</td><td>India</td></tr><tr><td>2026-09-03</td><td>Uber Drivers Sue Over Harmful Algorithmic Pay System</td><td>Poland</td></tr>
+    </table>
+</div>
+
+<script>
+const countryLabels = ["United States", "India", "Germany", "China", "Switzerland", "Japan", "Cyprus", "Greece", "Russia", "Brazil", "Colombia", "Poland"];
+const countryData = [8, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+
+new Chart(document.getElementById('countryChart'), {
+    type: 'bar',
+    data: {
+        labels: countryLabels,
+        datasets: [{
+            label: 'Incidents',
+            data: countryData,
+            backgroundColor: '#38bdf8'
+        }]
+    },
+    options: {
+        plugins: { legend: { display: false } },
+        scales: {
+            x: { ticks: { color: '#94a3b8' } },
+            y: { ticks: { color: '#94a3b8' } }
+        }
+    }
+});
+
+const timeLabels = ["2026-09-03", "2026-09-04"];
+const timeData = [15, 5];
+
+new Chart(document.getElementById('timeChart'), {
+    type: 'line',
+    data: {
+        labels: timeLabels,
+        datasets: [{
+            label: 'Incidents',
+            data: timeData,
+            borderColor: '#f87171',
+            backgroundColor: 'rgba(248,113,113,0.2)',
+            tension: 0.3,
+            fill: true
+        }]
+    },
+    options: {
+        plugins: { legend: { display: false } },
+        scales: {
+            x: { ticks: { color: '#94a3b8' } },
+            y: { ticks: { color: '#94a3b8' } }
+        }
+    }
+});
+</script>
+</body>
+</html>
